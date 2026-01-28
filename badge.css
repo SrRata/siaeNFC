@@ -1,0 +1,52 @@
+/* 
+
+ESTRUCTURA HTML
+
+<span class="badge badge-green">
+    <div class="circle"></div>
+    Presente
+</span>
+
+*/
+
+
+
+.badge {
+    font-weight: var(--semi-bold);
+    border-radius: 999px;
+
+    width: max-content;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 5px 15px;
+
+    font-size: 1rem;
+
+    text-transform: capitalize;
+}
+
+.badge .circle {
+    border-radius: 999px;
+    background-color: currentColor;
+    width: 6px;
+    height: 6px;
+}
+
+.badge-green {
+    color: var(--green-primary);
+    background: var(--green-secondary);
+}
+
+.badge-red {
+    color: var(--red-primary);
+    background: var(--red-secondary);
+}
+
+.badge-orange {
+    color: var(--orange-primary);
+    background: var(--orange-secondary);
+}

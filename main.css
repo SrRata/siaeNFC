@@ -1,0 +1,10 @@
+main {
+    
+    position: fixed;
+    left: var(--width-sidebar);
+    top: var(--height-header);
+    overflow-y: auto;
+    height: calc(100vh - var(--height-header));
+    width: calc(100% - var(--width-sidebar));
+    
+}

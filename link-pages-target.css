@@ -1,0 +1,24 @@
+.link-pages-target {
+    width: 100%;
+    background: var(--white-primary);
+    border-radius: var(--border-radius-primary);
+    padding: 24px 68px 24px 24px;  
+    
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.link-pages-target-action {
+    font-size: 1.3rem;
+    font-weight: var(--bold);
+    color: var(--black-primary);
+}
+
+.link-pages-target-description {
+    font-size: 1rem;
+    font-weight: var(--medium);
+    color: var(--black-secondary);
+    line-height: var(--line-height-primary);
+}

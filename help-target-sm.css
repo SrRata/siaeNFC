@@ -1,0 +1,18 @@
+.help-target-sm {
+    width: 100%;
+    background: var(--white-primary);
+    border-radius: var(--border-radius-primary);
+    padding: 16px;  
+    
+    display: flex;
+    gap: 16px;
+
+    margin-top: 48px;
+}
+
+.help-target-sm-text {
+    font-size: 1rem;
+    font-weight: var(--medium);
+    color: var(--black-secondary);
+    line-height: var(--line-height-primary);
+}

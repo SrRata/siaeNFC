@@ -1,0 +1,28 @@
+/* 
+
+    ESTRUCTURA HTML
+
+    <a href="#" class="link">
+        Ver listados
+        <i data-lucide="chevron-right"></i>
+    </a>
+
+*/
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 1rem;
+    color: var(--blue-primary);
+    font-weight: var(--bold);
+
+    transition: all .2s ease-in-out;
+}
+
+.link svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    stroke-width: 3;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <div class="sidebar">
+
+
+        <div class="top">
+            <i data-lucide="panel-right" class="sidebar-toggle"></i>
+            logo
+        </div>
+
+
+        <nav class="content">
+            <ul>
+                <a href="#" class="sidebar-item item-selected">
+                    <i data-lucide="layout-dashboard"></i>
+                    Panel de Control
+                </a>
+
+                <a href="#" class="sidebar-item">
+                    <i data-lucide="home"></i>
+                    Mis Cursos
+                </a>
+                <a href="#" class="sidebar-item">
+                    <i data-lucide="users"></i>
+                    Mis Alumnos
+                </a>
+                <a href="#" class="sidebar-item">
+                    <i data-lucide="history"></i>
+                    Historial
+                </a>
+                <a href="#" class="sidebar-item">
+                    <i data-lucide="clipboard"></i>
+                    Reportes del Curso
+                </a>
+                <a href="#" class="sidebar-item">
+                    <i data-lucide="clipboard-pen"></i>
+                    Observaciones
+                </a>
+                <a href="#" class="sidebar-item">
+                    <i data-lucide="user-circle"></i>
+                    Mi perfil
+                </a>
+                <a href="#" class="sidebar-item">
+                    <i data-lucide="circle-question-mark"></i>
+                    Ayuda
+                </a>
+            </ul>
+        </nav>
+
+        <div class="bottom">
+
+            <a href="#" class="sidebar-item logout">
+                <i data-lucide="log-out"></i>
+                Cerrar Sesión
+            </a>
+
+        </div>
+
+
+    </div>
+
+   <header class="header">
+        <div class="header-left">
+            <h2>Panel del Docente</h2>
+            <p>Bienvenido, Lic. Juan Perez</p>  
+        </div>
+        <div class="header-right">
+            <div class="time">
+
+                <div class="time-display">
+                    <span class="time-box" id="hour">12</span>
+                    <span class="separator">:</span>
+                    <span class="time-box" id="minute">59</span>
+                    <span class="separator">:</span>
+                    <span class="time-box" id="second">59</span>
+                </div>
+
+                <p class="date-text">
+                    Viernes, 28 de Mayo 2024
+                </p>
+
+            </div>
+            <div class="user-info">
+                <div class="user">
+                    <p class="user-name">Lic. Juan Perez</p>
+                    <p class="user-role">Profesor</p>
+                </div>
+                <div class="user-image"></div>
+            </div>
+        </div>
+   </header>
+
+
+
+   <main class="main">
+scs
+
+
+   </main>
+   
+
+
+</body>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<script>
+  lucide.createIcons();
+
+  const sidebar = document.querySelector('.sidebar');
+  const sidebarToggle = document.querySelector('.sidebar-toggle');
+  const header = document.querySelector('.header');
+
+  // Recuperar estado del Local Storage al cargar la página
+  if (localStorage.getItem('sidebar-collapsed') === 'true') {
+      sidebar.classList.add('sidebar-none');
+      header.style.width = 'calc(100% - 40px)';
+  }
+
+  setTimeout(() => {
+      document.body.classList.remove('preload');
+  }, 100);
+  
+  sidebarToggle.addEventListener('click', () => {
+      sidebar.classList.toggle('sidebar-none');
+      if (sidebar.classList.contains('sidebar-none')) {
+          header.style.width = 'calc(100% - 40px)';
+          localStorage.setItem('sidebar-collapsed', 'true');
+      } else {
+          header.style.removeProperty('width');
+          localStorage.setItem('sidebar-collapsed', 'false');
+      }
+  });
+</script>
+
+<script>
+    function updateClock() {
+        const now = new Date();
+        
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+        
+        document.getElementById('hour').textContent = hours;
+        document.getElementById('minute').textContent = minutes;
+        document.getElementById('second').textContent = seconds;
+
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        const dateString = now.toLocaleDateString('es-ES', options);
+        document.querySelector('.date-text').textContent = dateString.charAt(0).toUpperCase() + dateString.slice(1);
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+</script>
+
+
+</html>

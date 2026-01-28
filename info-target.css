@@ -1,0 +1,38 @@
+.grid-main-dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.info-target {
+    width: 100%;
+    background: var(--white-primary);
+    border-radius: var(--border-radius-primary);
+    padding: 24px;  
+    
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+
+.info-target-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.info-target-description {
+    font-size: 1rem;
+    font-weight: var(--medium);
+    color: var(--black-secondary);
+    text-transform: capitalize;
+}
+
+.info-target-value {
+    font-size: 2rem;
+    font-weight: var(--bold);
+    color: var(--black-primary);
+    text-transform: capitalize;
+}
