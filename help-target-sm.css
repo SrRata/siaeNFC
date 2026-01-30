@@ -6,13 +6,21 @@
     
     display: flex;
     gap: 16px;
+    align-items: center;
 
-    margin-top: 48px;
+}
+
+
+.help-target-sm-main-text {
+    font-size: 1.1rem;
+    font-weight: var(--bold);
+    color: var(--black-primary);
 }
 
 .help-target-sm-text {
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: var(--medium);
     color: var(--black-secondary);
     line-height: var(--line-height-primary);
 }
+    

@@ -18,17 +18,16 @@
     place-content: center;
 }
 
-
 .icon-square {
     border-radius: var(--border-radius-primary);
 }
 
 .icon-circle {
     border-radius: 999px;
-    max-height: 38px;
-    max-width: 38px;
-    min-height: 38px;
-    min-width: 38px;
+    max-height: 44px;
+    max-width: 44px;
+    min-height: 44px;
+    min-width: 44px;
 }
 
 .icon-container svg {
@@ -57,3 +56,21 @@
     background: var(--purple-secondary);
     color: var(--purple-primary);
 }
+
+.icon-orange {
+    background: var(--orange-secondary);
+    color: var(--orange-primary);
+}
+
+.icon-red {
+    background: var(--red-secondary);
+    color: var(--red-primary);
+}
+
+.icon-yellow {
+    background: var(--yellow-secondary);
+    color: var(--yellow-primary);
+}
+
+
+

@@ -1,4 +1,4 @@
-main {
+.main {
     
     position: fixed;
     left: var(--width-sidebar);

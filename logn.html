@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="global.css">
+
+
+    <link rel="stylesheet" href="icon-square.css">
+    <link rel="stylesheet" href="help-target-sm.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="link.css">
+
+</head>
+<body class="item-center">
+
+    <section class="login-container">
+
+        <div class="login-icon">
+            <div class="icon-container icon-circle icon-blue">
+                <i class="icon" data-lucide="graduation-cap"></i>
+            </div>
+        </div>
+
+        <div class="login-top-text">
+            <h2 class="login-range-text">Acceso para Padres de Familia</h2>
+            <p class="login-description">Sistema Inteligente de Asistencia Estudiantil</p>
+        </div>
+        
+        <div class="help-target-sm">
+            <div class="icon-container icon-square icon-blue">
+                <i class="icon" data-lucide="shield"></i>
+            </div>
+            <div>
+                <p class="help-target-sm-main-text">Acceso restringido</p>
+                <p class="help-target-sm-text">Solo para reprensentantes autorizados por la institucion.</p>
+            </div>
+        </div>
+
+        <form action="#" class="login-form">
+
+            <div class="login-form-row">
+                <label class="login-form-label" for="#">Usuario (Cédula o Correo)</label>
+                <div class="login-form-input">
+                    <input type="text" placeholder="Ej: 1712345678">
+                    <i data-lucide="user"></i>
+                </div>
+            </div>
+
+            <div class="login-form-row">
+                <label class="login-form-label" for="#">Contraseña</label>
+                <div class="login-form-input">
+                    <input type="text" placeholder="Ingrese su contraseña">
+                    <i data-lucide="eye"></i>
+                </div>
+            </div>
+
+            <button class="login-form-button">
+                Ingresar 
+                <i data-lucide="chevron-right"></i>
+            </button>
+
+            <a href="#" class="link link-center">
+                ¿Olvidó tu contraseña?
+            </a>
+
+        </form>
+
+    </section>
+
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        lucide.createIcons();   
+    </script>
+
+</body>
+</html>

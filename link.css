@@ -26,3 +26,7 @@
     height: 1.2rem;
     stroke-width: 3;
 }
+
+.link-center {
+    justify-content: center;
+}
