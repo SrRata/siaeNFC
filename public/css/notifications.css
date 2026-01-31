@@ -1,0 +1,146 @@
+/* 
+
+    ESTRUCTURA HTML
+
+
+    <div class="notifications">
+                <div class="notifications-top">
+                    <div>
+                        <p class="notifications-title">Actividad reciente</p>
+                        <p class="notifications-description">Estas visualizando registros recientes de asistencia</p>
+                    </div>
+                    <a href="#" class="link">Ver todo</a>
+                </div>
+                <div class="notifications-item">
+                    <div class="notifications-item-left">
+                        <div class="icon-container icon-circle icon-green">
+                            <i class="icon" data-lucide="check-circle"></i> 
+                        </div>
+                        <div class="notifications-item-text">
+                            <p class="notifications-item-text-info">
+                                <span class="notifications-item-text-info-name">Luis Matailo</span>
+                                registro entrada puntual
+                            </p>
+                            <p class="notifications-item-text-info-description">
+                                Hace 3 minutos • 10mo Grado - Paralelo A
+                            </p>
+                        </div>
+                    </div>
+                    <p class="notifications-item-time">
+                        11:59 AM
+                    </p>
+                </div>
+                <div class="notifications-item">
+                    <div class="notifications-item-left">
+                        <div class="icon-container icon-circle icon-orange">
+                            <i class="icon" data-lucide="triangle-alert"></i> 
+                        </div>
+                        <div class="notifications-item-text">
+                            <p class="notifications-item-text-info">
+                                <span class="notifications-item-text-info-name">Braulio Guambaña</span>
+                                registro entrada atrasada
+                            </p>
+                            <p class="notifications-item-text-info-description">
+                                Hace 3 minutos • 10mo Grado - Paralelo A
+                            </p>
+                        </div>
+                    </div>
+                    <p class="notifications-item-time">
+                        12:25 PM
+                    </p>
+                </div>
+                <div class="notifications-item">
+                    <div class="notifications-item-left">
+                        <div class="icon-container icon-circle icon-red">
+                            <i class="icon" data-lucide="check-circle"></i> 
+                        </div>
+                        <div class="notifications-item-text">
+                            <p class="notifications-item-text-info">
+                                <span class="notifications-item-text-info-name">Bryam Illescas</span>
+                                no registro salida
+                            </p>
+                            <p class="notifications-item-text-info-description">
+                                Hace 3 minutos • 10mo Grado - Paralelo A
+                            </p>
+                        </div>
+                    </div>
+                    <p class="notifications-item-time">
+                        7:00 PM
+                    </p>
+                </div>
+            </div>
+*/
+
+
+
+.notifications {
+    width: 100%;
+    background: var(--white-primary);
+    border-radius: var(--border-radius-primary);
+
+    grid-column: span 2;
+} 
+
+.notifications-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 24px 16px 24px;
+}
+
+.notifications-top .link {
+    text-wrap: nowrap;
+}
+
+.notifications-title {
+    font-size: 1.3rem;
+    font-weight: var(--bold);
+    color: var(--black-primary);
+    line-height: var(--line-height-secondary);
+}
+
+.notifications-description {
+    font-size: 1rem;
+    font-weight: var(--medium);
+    color: var(--black-secondary);
+}
+
+.notifications-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    gap: 16px;
+}
+
+.notifications-item-left {
+    display: flex;
+    align-items: center;
+    gap: 16px
+}
+
+.notifications-item-text-info {
+    font-size: 1rem;
+    font-weight: var(--medium);
+    color: var(--black-primary);
+    line-height: var(--line-height-secondary);
+}
+
+.notifications-item-text-info-name {
+    font-weight: var(--bold);
+}
+
+
+.notifications-item-text-info-description {
+    font-size: .9rem;
+    font-weight: var(--semi-bold);
+    color: var(--black-secondary);
+    line-height: var(--line-height-secondary);
+}
+
+.notifications-item-time {
+    font-size: 1rem;
+    font-weight: var(--semi-bold);
+    color: var(--black-primary);
+    text-wrap: nowrap;
+}

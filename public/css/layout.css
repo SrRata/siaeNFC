@@ -1,5 +1,3 @@
-
-
 .sidebar {
     background: var(--white-primary);
     height: 100vh;
@@ -17,8 +15,6 @@
     top: 0;
     left: 0;
     z-index: 999;
-
-    transition: all .2s ease-in-out;
 
 }
 
@@ -40,10 +36,6 @@
 
     stroke-width: 2;
 }
-
-
-
-
 
 
 .sidebar .content {
@@ -71,7 +63,6 @@
 
     cursor: pointer;
 
-    transition: all .2s ease-in-out;
 }
 
 .sidebar-item svg {
@@ -79,13 +70,6 @@
     height: 1.5rem;
     stroke-width: 1.5;
 }
-
-
-/* .content .sidebar-item:hover {
-    background: var(--blue-secondary);
-    opacity: 0.3;
-} */
-
 
 .content .item-selected {
     color: var(--blue-primary);
@@ -96,10 +80,6 @@
 .sidebar-item.item-selected svg {
     stroke-width: 2;
 }
-
-
-
-
 
 .sidebar .bottom {
     width: 100%;
@@ -115,14 +95,7 @@
 }
 
 
-
-
-
-
-
-
-
-
+/* ----------------------------------------------------------- HEADER ------------------------------------------------- */
 
 
 .header {
@@ -136,13 +109,10 @@
     height: var(--height-header);
     background: var(--white-primary);
 
-
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-
-    transition: all .2s ease-in-out;
 
 }
 
@@ -201,9 +171,6 @@
     text-align: right;
 }
 
-
-
-
 .user-info {
     display: flex;
     align-items: center;
@@ -224,7 +191,6 @@
     text-align: right;
 }
 
-
 .user-image {
     width: 44px;
     height: 44px;
@@ -233,3 +199,26 @@
     background: var(--gray);
     overflow: hidden;
 }
+
+
+/* ----------------------------------------------------------- MAIN ------------------------------------------------- */
+
+
+.main {
+    
+    position: fixed;
+    left: var(--width-sidebar);
+    top: var(--height-header);
+    overflow-y: auto;
+    height: calc(100vh - var(--height-header));
+    width: calc(100% - var(--width-sidebar));
+
+}
+
+.grid-main-dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+

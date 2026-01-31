@@ -1,8 +1,20 @@
-.grid-main-dashboard {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-}
+/* 
+
+    ESTRUCTURA HTML
+
+    <div class="info-target">
+        <div class="info-target-top">
+            <div class="icon-container icon-square icon-blue">
+                <i class="icon" data-lucide="book-open"></i>
+            </div>
+
+        </div>
+        <p class="info-target-description">Mis cursos</p>
+        <p class="info-target-value">6 cursos</p>
+    </div>
+
+*/
+
 
 .info-target {
     width: 100%;
@@ -21,7 +33,6 @@
     align-items: center;
     justify-content: space-between;
 }
-
 
 .info-target-description {
     font-size: 1rem;

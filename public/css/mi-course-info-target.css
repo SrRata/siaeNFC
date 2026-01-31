@@ -1,3 +1,73 @@
+/* 
+
+    ESTRUCTURA HTML
+
+    <div class="mi-course-info-target">
+        <div class="mi-course-info-target-top">
+            <p class="mi-course-info-name">10mo grado - paralelo a</p>
+            <p class="mi-course-info-description">Datos relevantes de su curso asignado.</p>
+            <i class="mi-course-info-icon" data-lucide="graduation-cap" ></i>
+        </div>
+        <div class="mi-course-info-target-body">
+            <div class="mi-course-info-target-state">
+                <p>Estado de Asistencia</p>
+                <div class="badge badge-green">
+                    <div class="circle"></div>
+                    Registro activo
+                </div>
+            </div>
+            <div class="statistics-container">
+                <div class="mi-course-statistics-target">
+                    <p class="mi-course-statistics-target-description">
+                        Presentes
+                    </p>
+                    <p class="mi-course-statistics-target-students">
+                        <span>24 </span>/ 30 alumnos 
+                    </p>
+                    <div class="mi-course-statistics-target-bar">
+                        <div class="mi-course-statistics-target-bar-fill"></div>
+                    </div>
+                </div>
+                <div class="mi-course-statistics-target">
+                    <p class="mi-course-statistics-target-description">
+                        Ausentes / Atrasos
+                    </p>
+                    <div class="mi-course-statistics-target-value-container">
+                        <p class="mi-course-statistics-target-value">
+                            <span class="value-orange">4</span>
+                            Atrasos
+                        </p>
+                        <div class="separator"></div>
+                        <p class="mi-course-statistics-target-value">
+                            <span class="value-red">2</span>
+                            Ausentes
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mi-course-info-target-body-bottom">
+                <div class="last-register">
+                    <div class="icon-container icon-circle icon-blue">
+                        <i class="icon" data-lucide="nfc"></i>
+                    </div>
+                    <div class="last-register-text">
+                        Ultimo registro hace 
+                        <span class="last-register-time">2 min</span>
+                        :
+                        <span class="last-register-name">Luis Matailo</span>
+                    </div>
+                </div> <!--Esto puede ser cun componente independiente en futuro si se quiere usar en varias paginas -->
+                <a href="#" class="link">
+                    Ver listado completo
+                    <i data-lucide="chevron-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+*/
+
+
 .mi-course-info-target {
     border-radius: 0 0 var(--border-radius-primary) var(--border-radius-primary);
     background: var(--white-primary);
@@ -162,10 +232,6 @@
     align-items: center;
     justify-content: space-between
 }
-
-
-
-
 
 
 .last-register {

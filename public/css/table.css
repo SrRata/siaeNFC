@@ -1,0 +1,111 @@
+/*
+
+    ESTRUCTURA HTML
+
+        <div class="table">
+            <div class="table-top">
+                <div class="table-top-description">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="graduation-cap" aria-hidden="true" class="lucide lucide-graduation-cap table-top-description-icon"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg>
+                    <p class="table-top-description-title">10mo grado</p>
+                </div>
+                <p class="table-top-period">Periodo 2024</p>
+            </div>
+            <table class="table-desing">
+                <thead>
+                    <tr><th class="table-title-column">Foto</th>
+                    <th class="table-title-column">Nombre completo</th>
+                    <th class="table-title-column">Matricula/ID</th>
+                    <th class="table-title-column">Asistencia hoy</th>
+                    <th class="table-title-column">Acciones</th>
+                </tr></thead>
+                <tbody>
+                    <tr>
+                        <td class="table-data"></td>
+                        <td class="table-data">Justin Alvarez</td>
+                        <td class="table-data"><span class="badge bagde-gray">01500</span></td>
+                        <td class="table-data"><span class="badge badge-green"><div class="circle"></div> Presente</span></td>
+                        <td class="table-data"></td>
+                    </tr>
+                    <tr>
+                        <td class="table-data"></td>
+                        <td class="table-data">Luis Matailo</td>
+                        <td class="table-data"></td>
+                        <td class="table-data"></td>
+                        <td class="table-data"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+*/
+
+
+.table  {
+    grid-column: span 3;
+
+    background: var(--white-primary);
+    border-radius: var(--border-radius-primary);
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.table-top {
+    display: flex;
+    align-items: center;
+    gap: 144px;
+}
+
+.table-top-description {
+ display: flex;
+ align-items: center;
+ gap: 10px;
+}
+
+.table-top-description-icon {
+    width: 32px;
+    height: 32px;
+    stroke-width: 2;
+    color: var(--blue-primary);
+}
+
+.table-top-description-title {
+    font-size: 1.2rem;
+    font-weight: var(--semi-bold);
+    color: var(--black-primary);
+}
+
+.table-top-period {
+    font-size: 1rem;
+    font-weight: var(--medium);
+    color: var(--black-secondary);
+}
+
+
+.table-desing {
+    width: 100%;
+}
+
+.table-title-column {
+    font-size: 1rem;
+    font-weight: var(--bold);
+    color: var(--black-secondary);
+    text-align: left;
+    text-transform: capitalize;
+
+    padding: 18px 24px;
+
+}
+
+.table-data {
+    font-size: 1rem;
+    font-weight: var(--bold);
+    color: var(--black-primary);
+    text-align: left;
+
+
+    padding: 18px 24px;
+
+}
