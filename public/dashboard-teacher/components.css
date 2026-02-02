@@ -19,6 +19,8 @@
     font-weight: var(--bold);
 
     transition: all .2s ease-in-out;
+    width: max-content;
+
 }
 
 .link svg {
@@ -162,6 +164,16 @@ ESTRUCTURA HTML
 .badge-orange {
     color: var(--orange-primary);
     background: var(--orange-secondary);
+}
+
+.badge-gray {
+    color: var(--black-secondary);
+    background: var(--gray);
+}
+
+.badge-yellow {
+    color: var(--yellow-primary);
+    background: var(--yellow-secondary);
 }
 
 
@@ -351,10 +363,7 @@ ESTRUCTURA HTML
 .course-target .link {
     margin-top: 32px;
 }
-
-/* ----------------------------------------------------------- LINK PAGES TARGET -----------------------------------------------------------
-
-
+/*
     ESTRUCTURA HTML
 
         <div class="link-pages-target">
@@ -398,26 +407,10 @@ ESTRUCTURA HTML
 }
 
 
-/* ----------------------------------------------- MY COURSE INFO TARGET ----------------------------------------------------------------
-
-    ESTRUCTURA HTML
-
-    <div class="mi-course-info-target">
-        <div class="mi-course-info-target-top">
-            <p class="mi-course-info-name">10mo grado - paralelo a</p>
-            <p class="mi-course-info-description">Datos relevantes de su curso asignado.</p>
-            <i class="mi-course-info-icon" data-lucide="graduation-cap" ></i>
-        </div>
-        <div class="mi-course-info-target-body">
-            <div class="mi-course-info-target-state">
-                <p>Estado de Asistencia</p>
-                <div class="badge badge-green">
-                    <div class="circle"></div>
-                    Registro activo
-                </div>
-            </div>
-            <div class="statistics-container">
-                <div class="mi-course-statistics-target">
+/* ------------------------ MY COURSE INFO TARGET ----------------------------------------------------------------
+rse-info-target-top">
+rse-info-target-body">
+ro activo
                     <p class="mi-course-statistics-target-description">
                         Presentes
                     </p>
@@ -843,4 +836,78 @@ ESTRUCTURA HTML
     color: var(--black-secondary);
     line-height: var(--line-height-primary);
 }
-    
+
+
+/* ----------------------------------------------------- TABLE --------------------------------------------------------
+
+
+*/
+
+
+.table {
+    background: var(--white-primary);
+    border-radius: var(--border-radius-primary);
+    padding: 24px;
+    grid-column: 1/-1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.table-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.table-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+    font-weight: var(--bold);
+    color: var(--black-primary);
+    text-transform: capitalize;
+}
+
+.table-title svg {
+    width: 26px;
+    height: 26px;
+    stroke-width: 2;
+    color: var(--blue-primary);
+}
+
+.table-body {
+    width: 100%;
+}
+
+.table-data {
+    padding: 16px 24px;
+    text-align: left;
+}
+
+.table-data-first {
+    padding-left: 0;
+}
+
+.table-data-last {
+    padding-right: 0;
+    text-align: right;
+}
+
+.table-action {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.table-header {
+    font-size: 1rem;font-weight: var(--bold);
+    color: var(--black-secondary)
+}
+
+.table-data-name {
+    font-size: 1rem;
+    font-weight: var(--bold);
+    color: var(--black-primary);
+}
