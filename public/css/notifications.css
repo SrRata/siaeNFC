@@ -78,7 +78,7 @@
     background: var(--white-primary);
     border-radius: var(--border-radius-primary);
 
-    grid-column: span 2;
+    grid-column: span 3;
 } 
 
 .notifications-top {

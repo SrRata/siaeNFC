@@ -1,6 +1,6 @@
 <?php
-include '../../src/components/elements/dashboard-sidebar.php';
-include '../../src/components/elements/dashboard-header.php';
+include '../../src/layout/dashboard-sidebar.php';
+include '../../src/layout/dashboard-header.php';
 
 $default = 'panel';
 
@@ -96,6 +96,8 @@ $pageTitle = $viewTitles[$view] ?? 'Dashboard';
 
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="components.css">
+
 </head>
 <body>
 

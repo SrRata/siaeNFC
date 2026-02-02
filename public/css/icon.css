@@ -72,5 +72,8 @@
     color: var(--yellow-primary);
 }
 
+.icon-bg-none {
+    background: none;
+}
 
 

@@ -1,0 +1,846 @@
+/* ---------------------------------------------- LINK -----------------------------------------------------------------------------------
+
+    ESTRUCTURA HTML
+
+    <a href="#" class="link">
+        Ver listados
+        <i data-lucide="chevron-right"></i>
+    </a>
+
+*/
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 1rem;
+    color: var(--blue-primary);
+    font-weight: var(--bold);
+
+    transition: all .2s ease-in-out;
+}
+
+.link svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    stroke-width: 3;
+}
+
+.link-center {
+    justify-content: center;
+}
+
+
+/* ----------------------------------------------- ICON --------------------------------------------------------------------------------- 
+
+    ESTRUCTURA HTML
+
+    <div class="icon-container icon-square icon-green">
+        <i data-lucide="book-open"></i>
+    </div>
+
+*/
+
+.icon-container {
+    min-width: 44px;
+    min-height: 44px;
+    max-width: 44px;
+    max-height: 44px;
+
+    display: grid;
+    place-content: center;
+}
+
+.icon-square {
+    border-radius: var(--border-radius-primary);
+}
+
+.icon-circle {
+    border-radius: 999px;
+    max-height: 44px;
+    max-width: 44px;
+    min-height: 44px;
+    min-width: 44px;
+}
+
+.icon-container svg {
+    width: 26px;
+    height: 26px;
+    stroke-width: 2;
+    color: currentColor;
+}
+
+.icon-circle svg {
+    width: 22px;
+    height: 22px;
+}
+
+.icon-blue {
+    background: var(--blue-secondary);
+    color: var(--blue-primary);
+}
+
+.icon-green {
+    background: var(--green-secondary);
+    color: var(--green-primary);
+}
+
+.icon-purple {
+    background: var(--purple-secondary);
+    color: var(--purple-primary);
+}
+
+.icon-orange {
+    background: var(--orange-secondary);
+    color: var(--orange-primary);
+}
+
+.icon-red {
+    background: var(--red-secondary);
+    color: var(--red-primary);
+}
+
+.icon-yellow {
+    background: var(--yellow-secondary);
+    color: var(--yellow-primary);
+}
+
+.icon-bg-none {
+    background: none;
+}
+
+
+/* ------------------------------------------- BADGE ---------------------------------------------------------------------
+
+ESTRUCTURA HTML
+
+<span class="badge badge-green">
+    <div class="circle"></div>
+    Presente
+</span>
+
+*/
+
+
+
+.badge {
+    font-weight: var(--semi-bold);
+    border-radius: 999px;
+
+    width: max-content;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 5px 15px;
+
+    font-size: 1rem;
+
+    text-transform: capitalize;
+}
+
+.badge .circle {
+    border-radius: 999px;
+    background-color: currentColor;
+    width: 6px;
+    height: 6px;
+}
+
+.badge-green {
+    color: var(--green-primary);
+    background: var(--green-secondary);
+}
+
+.badge-red {
+    color: var(--red-primary);
+    background: var(--red-secondary);
+}
+
+.badge-orange {
+    color: var(--orange-primary);
+    background: var(--orange-secondary);
+}
+
+
+/* ------------------------------------------- INFO TARGET -------------------------------------------------------
+
+
+    ESTRUCTURA HTML
+
+    <div class="info-target">
+        <div class="info-target-top">
+            <div class="icon-container icon-square icon-blue">
+                <i class="icon" data-lucide="book-open"></i>
+            </div>
+
+        </div>
+        <p class="info-target-title">Mis cursos</p>
+        <p class="info-target-value">6 cursos</p>
+    </div>
+
+    VERSION SM 
+
+    <div class="info-target info-target-sm">
+        <div class="info-target-top">
+            <p class="info-target-sm-title">Promedio de Asistencia</p>
+            <div class="icon-container icon-circle icon-green icon-bg-none">
+                <i class="icon" data-lucide="chart-column"></i>
+            </div>
+        </div>
+        <div class="info-target-sm-bottom">
+            <p class="info-target-value info-target-sm-value">92%</p>
+            <p class="info-target-sm-text info-target-sm-text-green">+4% vs el mes anterior</p>
+        </div>
+    </div>
+
+*/
+
+
+.info-target {
+    width: 100%;
+    background: var(--white-primary);
+    border-radius: var(--border-radius-primary);
+    padding: 24px;  
+    
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+
+.info-target-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-target-title {
+    font-size: 1rem;
+    font-weight: var(--medium);
+    color: var(--black-secondary);
+    text-transform: capitalize;
+
+}
+
+.info-target-value {
+    font-size: 2rem;
+    font-weight: var(--bold);
+    color: var(--black-primary);
+    text-transform: capitalize;
+}
+
+/* ---------------------------------- INFO TARGET SM ----------------------------------------- */
+
+.info-target-sm-bottom {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+}
+
+.info-target-sm-title {
+    font-size: 1rem;
+    font-weight: var(--bold);
+    color: var(--black-secondary);
+}
+
+.info-target-sm-value {
+    font-size: 2.5rem;
+}
+
+.info-target-sm-text {
+    font-size: 1rem;
+    font-weight: var(--semi-bold);
+    color: var(--black-secondary);
+}
+
+.info-target-sm-text-green {
+    color: var(--green-primary);
+}
+
+.info-target-sm-text-red {
+    color: var(--red-primary);
+}
+
+.info-target-sm-text-yellow {
+    color: var(--yellow-primary);
+}
+
+
+/* ------------------------------------------------------------ COURSE TARGET --------------------------------------------------------------------------------------
+
+    ESTRUCTURA HTML 
+
+    <div class="course-target">
+
+        <div class="course-target-top">
+            <div class="icon-container icon-square icon-blue">
+                <i class="icon" data-lucide="book-open"></i>
+            </div>
+            <div class="badge badge-green">
+                <div class="circle"></div>
+                Activo
+            </div>
+        </div>
+        
+        <p class="course-target-grade">10mo grado - paralelo a</p>
+        <p class="course-target-subject">Lengua y literatura</p>
+        <p class="course-target-students"> 
+            <i data-lucide="users"></i>
+            32 estudiantes registrados
+        </p>
+        <a href="#" class="link">
+            Seleccionar curso
+            <i data-lucide="chevron-right"></i>
+        </a>
+    </div>
+
+
+*/
+
+.course-target {
+    width: 100%;
+    background: var(--white-primary);
+    border-radius: var(--border-radius-primary);
+    padding: 24px;  
+    
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.course-target-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.course-target-grade {
+    font-size: 1.5rem;
+    font-weight: var(--bold);
+    color: var(--black-primary);
+    text-transform: capitalize;
+}
+
+.course-target-subject {
+    font-size: 1rem;
+    font-weight: var(--bold);
+    color: var(--blue-primary);;
+}
+
+.course-target-students {
+    font-size: 1rem;
+    font-weight: var(--medium);
+    color: var(--black-secondary);
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 10px;
+}
+
+.course-target-students svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    stroke-width: 1.5;
+}
+
+.course-target .link {
+    margin-top: 32px;
+}
+
+/* ----------------------------------------------------------- LINK PAGES TARGET -----------------------------------------------------------
+
+
+    ESTRUCTURA HTML
+
+        <div class="link-pages-target">
+            <div class="icon-container icon-square icon-blue">
+                <i class="icon" data-lucide="user-cog"></i>
+                </div>
+            <p class="link-pages-target-action">Gestion de mis alumnos</p>
+                <p class="link-pages-target-description">Ver fichas, reportes individuales y tags NFC asignados a sus estudiantes.</p>
+            <a href="#" class="link">
+                Ver listados
+                <i data-lucide="chevron-right"></i>
+            </a>
+        </div>
+
+*/
+
+
+.link-pages-target {
+    width: 100%;
+    background: var(--white-primary);
+    border-radius: var(--border-radius-primary);
+    padding: 24px 68px 24px 24px;  
+    
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.link-pages-target-action {
+    font-size: 1.3rem;
+    font-weight: var(--bold);
+    color: var(--black-primary);
+}
+
+.link-pages-target-description {
+    font-size: 1rem;
+    font-weight: var(--medium);
+    color: var(--black-secondary);
+    line-height: var(--line-height-primary);
+}
+
+
+/* ----------------------------------------------- MY COURSE INFO TARGET ----------------------------------------------------------------
+
+    ESTRUCTURA HTML
+
+    <div class="mi-course-info-target">
+        <div class="mi-course-info-target-top">
+            <p class="mi-course-info-name">10mo grado - paralelo a</p>
+            <p class="mi-course-info-description">Datos relevantes de su curso asignado.</p>
+            <i class="mi-course-info-icon" data-lucide="graduation-cap" ></i>
+        </div>
+        <div class="mi-course-info-target-body">
+            <div class="mi-course-info-target-state">
+                <p>Estado de Asistencia</p>
+                <div class="badge badge-green">
+                    <div class="circle"></div>
+                    Registro activo
+                </div>
+            </div>
+            <div class="statistics-container">
+                <div class="mi-course-statistics-target">
+                    <p class="mi-course-statistics-target-description">
+                        Presentes
+                    </p>
+                    <p class="mi-course-statistics-target-students">
+                        <span>24 </span>/ 30 alumnos 
+                    </p>
+                    <div class="mi-course-statistics-target-bar">
+                        <div class="mi-course-statistics-target-bar-fill"></div>
+                    </div>
+                </div>
+                <div class="mi-course-statistics-target">
+                    <p class="mi-course-statistics-target-description">
+                        Ausentes / Atrasos
+                    </p>
+                    <div class="mi-course-statistics-target-value-container">
+                        <p class="mi-course-statistics-target-value">
+                            <span class="value-orange">4</span>
+                            Atrasos
+                        </p>
+                        <div class="separator"></div>
+                        <p class="mi-course-statistics-target-value">
+                            <span class="value-red">2</span>
+                            Ausentes
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mi-course-info-target-body-bottom">
+                <div class="last-register">
+                    <div class="icon-container icon-circle icon-blue">
+                        <i class="icon" data-lucide="nfc"></i>
+                    </div>
+                    <div class="last-register-text">
+                        Ultimo registro hace 
+                        <span class="last-register-time">2 min</span>
+                        :
+                        <span class="last-register-name">Luis Matailo</span>
+                    </div>
+                </div> <!--Esto puede ser cun componente independiente en futuro si se quiere usar en varias paginas -->
+                <a href="#" class="link">
+                    Ver listado completo
+                    <i data-lucide="chevron-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+*/
+
+
+.mi-course-info-target {
+    border-radius: 0 0 var(--border-radius-primary) var(--border-radius-primary);
+    background: var(--white-primary);
+
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.mi-course-info-target-top {
+    padding: 42px 24px;
+
+    background: var(--blue-primary);
+
+    position: relative;
+}
+
+.mi-course-info-name {
+    font-size: 2rem;
+    font-weight: var(--bold);
+    color: var(--white-primary);
+    text-transform: capitalize;
+}
+
+.mi-course-info-description {
+    font-size: 1rem;
+    font-weight: var(--medium);
+    color: var(--white-primary);
+    opacity: .8;
+
+    margin-top: 10px;
+
+}
+
+.mi-course-info-icon {
+    width: 120px;
+    height: 120px;
+
+    top: 10px;
+    right: 24px;
+
+    position: absolute;
+
+    color: var(--white-primary);
+    opacity: .5;
+
+    stroke-width: 2;
+}
+
+.mi-course-info-target-body {
+    padding: 44px 34px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.mi-course-info-target-state {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.mi-course-info-target-state p {
+    font-size: 1.5rem;
+    font-weight: var(--bold);
+    color: var(--black-primary);
+}
+
+.statistics-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px
+}
+
+.mi-course-statistics-target {
+    background: var(--gray);
+    padding: 24px;
+    border-radius: var(--border-radius-primary);
+    
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+
+.mi-course-statistics-target-description {
+    font-size: 1.2rem;
+    font-weight: var(--semi-bold);
+    color: var(--black-secondary);
+    text-transform: capitalize;
+}
+
+.mi-course-statistics-target-students {
+    font-size: 1.5rem;
+    font-weight: var(--medium);
+    color: var(--black-secondary);
+}
+
+.mi-course-statistics-target-students span {
+    font-size: 3rem;
+    font-weight: var(--bold);
+    color: var(--blue-primary);
+}
+
+.mi-course-statistics-target-bar {
+    width: 100%;
+    height: 10px;
+    background: #d4d4d4;
+    border-radius: 999px;
+}
+
+.mi-course-statistics-target-bar-fill {
+    height: 100%;
+    background: var(--blue-primary);
+    width: 80%;
+    border-radius: 999px;
+}
+
+.mi-course-statistics-target-value-container {
+    display: flex;
+    align-items: center;
+    gap: 30px
+}
+
+.mi-course-statistics-target-value-container .separator {
+    background: #eaeaea;
+    height: 100%;
+    width: 2px;
+    border-radius: 999px;
+}
+
+.mi-course-statistics-target-value {
+    font-size: 1rem;
+    font-weight: var(--bold);
+    color: var(--black-secondary);
+    text-transform: uppercase;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mi-course-statistics-target-value span {
+    font-weight: var(--bold);
+    font-size: 2.5rem;
+}
+
+.mi-course-statistics-target-value .value-orange {
+    color: var(--orange-primary);
+}
+
+.mi-course-statistics-target-value .value-red {
+    color: var(--red-primary);
+}
+
+
+
+.mi-course-info-target-body-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+
+.last-register {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.last-register-text {
+    font-size: 1rem;
+    font-weight: var(--medium);
+    color: var(--black-secondary);
+} 
+
+.last-register-time {
+    font-size: 1rem;
+}
+
+.last-register-name {
+    font-size: 1rem;
+    font-weight: var(--bold);
+    color: var(--black-primary);
+}
+
+/* ----------------------------------------------------------- NOTIFICATIONS ------------------------------------------------------------------------
+
+    ESTRUCTURA HTML
+
+
+    <div class="notifications">
+                <div class="notifications-top">
+                    <div>
+                        <p class="notifications-title">Actividad reciente</p>
+                        <p class="notifications-description">Estas visualizando registros recientes de asistencia</p>
+                    </div>
+                    <a href="#" class="link">Ver todo</a>
+                </div>
+                <div class="notifications-item">
+                    <div class="notifications-item-left">
+                        <div class="icon-container icon-circle icon-green">
+                            <i class="icon" data-lucide="check-circle"></i> 
+                        </div>
+                        <div class="notifications-item-text">
+                            <p class="notifications-item-text-info">
+                                <span class="notifications-item-text-info-name">Luis Matailo</span>
+                                registro entrada puntual
+                            </p>
+                            <p class="notifications-item-text-info-description">
+                                Hace 3 minutos • 10mo Grado - Paralelo A
+                            </p>
+                        </div>
+                    </div>
+                    <p class="notifications-item-time">
+                        11:59 AM
+                    </p>
+                </div>
+                <div class="notifications-item">
+                    <div class="notifications-item-left">
+                        <div class="icon-container icon-circle icon-orange">
+                            <i class="icon" data-lucide="triangle-alert"></i> 
+                        </div>
+                        <div class="notifications-item-text">
+                            <p class="notifications-item-text-info">
+                                <span class="notifications-item-text-info-name">Braulio Guambaña</span>
+                                registro entrada atrasada
+                            </p>
+                            <p class="notifications-item-text-info-description">
+                                Hace 3 minutos • 10mo Grado - Paralelo A
+                            </p>
+                        </div>
+                    </div>
+                    <p class="notifications-item-time">
+                        12:25 PM
+                    </p>
+                </div>
+                <div class="notifications-item">
+                    <div class="notifications-item-left">
+                        <div class="icon-container icon-circle icon-red">
+                            <i class="icon" data-lucide="check-circle"></i> 
+                        </div>
+                        <div class="notifications-item-text">
+                            <p class="notifications-item-text-info">
+                                <span class="notifications-item-text-info-name">Bryam Illescas</span>
+                                no registro salida
+                            </p>
+                            <p class="notifications-item-text-info-description">
+                                Hace 3 minutos • 10mo Grado - Paralelo A
+                            </p>
+                        </div>
+                    </div>
+                    <p class="notifications-item-time">
+                        7:00 PM
+                    </p>
+                </div>
+            </div>
+*/
+
+.notifications {
+    width: 100%;
+    background: var(--white-primary);
+    border-radius: var(--border-radius-primary);
+
+    grid-column: span 3;
+} 
+
+.notifications-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 24px 16px 24px;
+}
+
+.notifications-top .link {
+    text-wrap: nowrap;
+}
+
+.notifications-title {
+    font-size: 1.3rem;
+    font-weight: var(--bold);
+    color: var(--black-primary);
+    line-height: var(--line-height-secondary);
+}
+
+.notifications-description {
+    font-size: 1rem;
+    font-weight: var(--medium);
+    color: var(--black-secondary);
+}
+
+.notifications-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    gap: 16px;
+}
+
+.notifications-item-left {
+    display: flex;
+    align-items: center;
+    gap: 16px
+}
+
+.notifications-item-text-info {
+    font-size: 1rem;
+    font-weight: var(--medium);
+    color: var(--black-primary);
+    line-height: var(--line-height-secondary);
+}
+
+.notifications-item-text-info-name {
+    font-weight: var(--bold);
+}
+
+
+.notifications-item-text-info-description {
+    font-size: .9rem;
+    font-weight: var(--semi-bold);
+    color: var(--black-secondary);
+    line-height: var(--line-height-secondary);
+}
+
+.notifications-item-time {
+    font-size: 1rem;
+    font-weight: var(--semi-bold);
+    color: var(--black-primary);
+    text-wrap: nowrap;
+}
+
+
+/* ------------------------------------------------------------------------- HELP TARGET ----------------------------------------------------------------------------------------------
+
+    ESTRUCTURA HTML
+
+        <div class="help-target-sm help-target-full">
+            <div class="icon-container icon-circle icon-blue">
+                <i class="icon" data-lucide="circle-alert"></i>
+            </div>
+            <p class="help-target-sm-text">Esta es una vista de solo lectura. Los cursos presentados han sido asignados por la dirección académica. Si nota alguna discrepancia en la lista de alumnos o materias, por favor contacte al administrador del sistema EduNFC.</p>
+        </div>
+
+*/
+
+.help-target-sm {
+    width: 100%;
+    background: var(--white-primary);
+    border-radius: var(--border-radius-primary);
+    padding: 16px;  
+    
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+}
+
+.help-target-full {
+    grid-column: 1 / -1;
+}
+
+.help-target-sm-main-text {
+    font-size: 1.1rem;
+    font-weight: var(--bold);
+    color: var(--black-primary);
+}
+
+.help-target-sm-text {
+    font-size: .9rem;
+    font-weight: var(--medium);
+    color: var(--black-secondary);
+    line-height: var(--line-height-primary);
+}
+    

@@ -9,7 +9,7 @@
             </div>
 
         </div>
-        <p class="info-target-description">Mis cursos</p>
+        <p class="info-target-title">Mis cursos</p>
         <p class="info-target-value">6 cursos</p>
     </div>
 
@@ -34,11 +34,12 @@
     justify-content: space-between;
 }
 
-.info-target-description {
+.info-target-title {
     font-size: 1rem;
     font-weight: var(--medium);
     color: var(--black-secondary);
     text-transform: capitalize;
+
 }
 
 .info-target-value {
@@ -46,4 +47,40 @@
     font-weight: var(--bold);
     color: var(--black-primary);
     text-transform: capitalize;
+}
+
+/* ---------------------------------- INFO TARGET SM ----------------------------------------- */
+
+.info-target-sm-bottom {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+}
+
+.info-target-sm-title {
+    font-size: 1rem;
+    font-weight: var(--bold);
+    color: var(--black-secondary);
+}
+
+.info-target-sm-value {
+    font-size: 2.5rem;
+}
+
+.info-target-sm-text {
+    font-size: 1rem;
+    font-weight: var(--semi-bold);
+    color: var(--black-secondary);
+}
+
+.info-target-sm-text-green {
+    color: var(--green-primary);
+}
+
+.info-target-sm-text-red {
+    color: var(--red-primary);
+}
+
+.info-target-sm-text-yellow {
+    color: var(--yellow-primary);
 }
