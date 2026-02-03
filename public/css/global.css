@@ -30,7 +30,7 @@
     --orange-secondary: #FFEDD5;
     
     /* Red */
-    --red-primary: #B91C1C;
+    --red-primary: #f51b1b;
     --red-secondary: #FEE2E2;
     
     /* Yellow */
@@ -81,6 +81,7 @@
     font-size: 14px;
     font-family: "Montserrat";
 }
+
 
 body {
     background: #efefef;

@@ -53,8 +53,8 @@
                 <p class="mi-course-statistics-target-students">
                     <span>24 </span>/ 30 alumnos 
                 </p>
-                <div class="mi-course-statistics-target-bar">
-                    <div class="mi-course-statistics-target-bar-fill"></div>
+                <div class="bar">
+                    <div class="bar-fill" style="width: 25%;"></div>
                 </div>
             </div>
             <div class="mi-course-statistics-target">

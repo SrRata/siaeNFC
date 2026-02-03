@@ -1,3 +1,93 @@
+/* INPUT 
+
+    <div class="input">
+        <i data-lucide="user"></i>
+        <input type="text" placeholder="Nombre del estudiante">
+    </div>
+
+
+*/ 
+
+input::placeholder {
+    color: var(--black-secondary);
+    font-weight: var(--medium);
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background: var(--gray);
+    padding: 10px 20px;
+    border-radius: var(--border-radius-primary);
+
+    width: 100%;
+}
+
+.input input {
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    font-weight: var(--semi-bold);
+    background: none;
+    border: none;
+}
+
+.input svg {
+    width: 24px;
+    height: 24px;
+}
+
+
+/* BUTTON 
+
+    <button class="button button-blue">
+        <i data-lucide="search"></i>    
+        Buscar
+    </button>
+
+
+*/    
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 10px;    
+    padding: 10px 20px;
+
+    border-radius: var(--border-radius-primary);
+    cursor: pointer;
+    border: none;
+
+    font-size: 1rem;
+    font-weight: var(--semi-bold);
+
+    min-width: 200px;
+
+    text-transform: capitalize;
+}
+
+.button svg {
+    width: 24px;
+    height: 24px;
+}
+
+.button-blue {
+    background: var(--blue-primary);
+    color: var(--white-primary);
+}
+
+.button-green {
+    background: var(--green-primary);
+    color: var(--white-primary);
+}
+
+
+
+
 /* ---------------------------------------------- LINK -----------------------------------------------------------------------------------
 
     ESTRUCTURA HTML
@@ -176,6 +266,13 @@ ESTRUCTURA HTML
     background: var(--yellow-secondary);
 }
 
+.badge-blue {
+    color: var(--blue-primary);
+    background: var(--blue-secondary);
+}
+
+
+
 
 /* ------------------------------------------- INFO TARGET -------------------------------------------------------
 
@@ -237,6 +334,12 @@ ESTRUCTURA HTML
 
 }
 
+.info-target-text {
+    font-size: 1rem;
+    font-weight: var(--medium);
+    color: var(--black-secondary);
+}
+
 .info-target-value {
     font-size: 2rem;
     font-weight: var(--bold);
@@ -280,6 +383,18 @@ ESTRUCTURA HTML
     color: var(--yellow-primary);
 }
 
+/* INFO TARGET SM V2 */
+
+.info-target-sm-v2 {
+    flex-direction: row;
+    align-items: center;
+}
+
+.info-target-sm-v2-right {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 
 /* ------------------------------------------------------------ COURSE TARGET --------------------------------------------------------------------------------------
 
@@ -567,20 +682,6 @@ ro activo
     color: var(--blue-primary);
 }
 
-.mi-course-statistics-target-bar {
-    width: 100%;
-    height: 10px;
-    background: #d4d4d4;
-    border-radius: 999px;
-}
-
-.mi-course-statistics-target-bar-fill {
-    height: 100%;
-    background: var(--blue-primary);
-    width: 80%;
-    border-radius: 999px;
-}
-
 .mi-course-statistics-target-value-container {
     display: flex;
     align-items: center;
@@ -647,6 +748,34 @@ ro activo
     font-size: 1rem;
     font-weight: var(--bold);
     color: var(--black-primary);
+}
+
+/* ------------------------------------------------------------ BAR ------------------------------------------------------------ 
+
+<div class="bar-sm"><div class="bar-fill" style="width: 91.6%;"></div></div>*/
+
+.bar {
+    width: 100%;
+    height: 10px;
+    background: #d4d4d4;
+    border-radius: 999px;
+}
+
+.bar-fill {
+    height: 100%;
+    background: var(--blue-primary);
+    border-radius: 999px;
+}
+
+.bar-alert {
+    background-color: var(--red-primary);
+}
+
+.bar-sm {
+    width: 100%;
+    height: 8px;
+    background: #d4d4d4;
+    border-radius: 999px;
 }
 
 /* ----------------------------------------------------------- NOTIFICATIONS ------------------------------------------------------------------------
@@ -882,9 +1011,37 @@ ro activo
     width: 100%;
 }
 
+.table table {
+    border-collapse: collapse;
+    width: auto;
+    table-layout: auto;
+}
+
 .table-data {
-    padding: 16px 24px;
+    padding: 24px;
     text-align: left;
+
+    font-size: 1rem;
+    font-weight: var(--semi-bold);
+    color: var(--black-primary);
+}
+
+.table-data:first-child {
+    padding-left: 0;
+}
+
+.table-data:last-child {
+    padding-right: 16px;
+    text-align: end;
+}
+
+.table-data-alert {
+    color: var(--red-primary);
+}
+
+.table-data-fit {
+    width: 1%;
+    white-space: nowrap;
 }
 
 .table-data-first {
@@ -893,12 +1050,6 @@ ro activo
 
 .table-data-last {
     padding-right: 0;
-    text-align: right;
-}
-
-.table-action {
-    display: flex;
-    justify-content: flex-end;
 }
 
 .table-header {
@@ -911,3 +1062,226 @@ ro activo
     font-weight: var(--bold);
     color: var(--black-primary);
 }
+
+.table-data-id {
+    font-size: .8rem;
+    font-weight: var(--medium);
+    color: var(--black-secondary);
+}
+
+.table-data-column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.table-data-column-center {
+    align-items: center;
+}
+
+.table-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.table-bottom-text {
+    font-size: .9rem;
+    font-weight: var(--semi-bold);
+    color: var(--black-secondary);
+}
+
+.table-bottom-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.table-bottom-actions svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    stroke-width: 2.5;
+    cursor: pointer;
+    color: var(--black-secondary);
+}
+
+/* ----------------------------------------------------------------- FILTERS -----------------------------------------------------------------
+
+<div class="filters">
+    <div class="filters-top">
+        <i data-lucide="funnel"></i>
+        <p>Filtros de busqueda</p>
+    </div>
+    <div class="filters-bottom">
+        <div class="filters-input">
+            <p>Rango de fecha</p>
+            <div class="input">
+                <i data-lucide="calendar-days"></i>
+                <input type="text">
+            </div>
+        </div>
+        <div class="filters-input">
+            <p>Rango de fecha</p>
+            <div class="input">
+                <i data-lucide="user"></i>
+                <input type="text" placeholder="Nombre del estudiante">
+            </div>
+        </div>
+        <button class="button button-blue">
+            <i data-lucide="search"></i>    
+            Buscar
+        </button>
+    </div>
+</div>
+
+*/
+
+.filters {
+    background-color: var(--white-primary);
+    border-radius: var(--border-radius-primary);
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+
+    grid-column: 1/-1;
+}
+
+.filters-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filters-bottom {
+    display: flex;
+    align-items: self-end;
+    gap: 20px;
+}
+
+.filters-top p {
+    font-size: 1.2rem;
+    font-weight: var(--bold);
+    color: var(--black-primary)
+}
+
+.filters-top svg {
+    color: var(--blue-primary);
+    fill: var(--blue-primary);
+    width: 20px;
+    height: 20px;
+}
+
+.filters-input {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.filters-input p {
+    font-size: 1rem;
+    font-weight: var(--semi-bold);
+    color: var(--black-secondary);
+}
+
+.filters-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.filters-reset {
+    width: 20px;
+    height: 20px;   
+    color: var(--black-secondary);
+    cursor: pointer;
+}
+
+
+/* ----------------------------------------- OBSERVATIONS -----------------------------------------*/ 
+
+.observation-history {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-column: 1/-1;
+}
+
+.observation-history-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.observation-history-left-title {
+    font-size: 1.2rem;
+    font-weight: var(--bold);
+    color: var(--black-primary);
+}
+
+.observation-history-right {
+    font-size: 1rem;
+    font-weight: var(--medium);
+    color: var(--black-secondary)
+}
+
+.observation {
+    background: var(--white-primary);
+    border-radius: var(--border-radius-primary);
+    padding: 24px;
+    
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    /* grid-column: 1/-1; */
+}
+
+.observation-top-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.observation-date {
+    font-size: 1rem;
+    font-weight: var(--semi-bold);
+    color: var(--black-secondary);
+}
+
+.observation-bottom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.observation-student {
+    font-size: 1rem;
+    font-weight: var(--semi-bold);
+    color: var(--black-secondary);
+}
+
+.observation-bottom svg {
+    color: var(--black-secondary);
+    width: 20px;
+    height: 20px;
+    stroke-width: 2;
+}
+
+.observation-text {
+    font-size: 1rem;
+    color: var(--black-primary);
+    font-weight: var(--medium);
+    line-height: var(--line-height-primary);
+
+}
+
+
+
+
+
+

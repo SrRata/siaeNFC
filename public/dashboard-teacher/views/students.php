@@ -1,3 +1,85 @@
+
+<div class="filters">
+    <div class="filters-top">
+        <i data-lucide="users"></i>
+        <p>Lista de estudiantes matriculados</p>
+    </div>
+    <div class="filters-bottom">
+        <div class="filters-input">
+            <p>Curso</p>
+            <div class="input">
+                <i data-lucide="graduation-cap"></i>
+                <input type="text">
+            </div>
+        </div>
+        <div class="filters-input">
+            <p>Estado</p>
+            <div class="input">
+                <i data-lucide="circle-small"></i>
+                <input type="text">
+            </div>
+        </div>
+        <div class="filters-input">
+            <p>Estudiante</p>
+            <div class="input">
+                <i data-lucide="user"></i>
+                <input type="text">
+            </div>
+        </div>
+        <div class="filters-actions">
+            <button class="button button-blue">
+                <i data-lucide="search"></i>    
+                Buscar
+            </button>
+            <i data-lucide="rotate-cw" class="filters-reset"></i>
+        </div>
+    </div>
+</div>
+
+<div class="table">
+    <div class="table-top">
+        <h3 class="table-title">
+            <i data-lucide="graduation-cap"></i>
+            3ro de bachillerato especialidad informatica
+        </h3>
+    </div>
+    <table class="table-body">
+        <thead>
+            <tr>
+                <th class="table-header table-data">Foto</th>
+                <th class="table-header table-data">Nombre</th>
+                <th class="table-header table-data">Matricula/ID</th>
+                <th class="table-header table-data">Asistencia hoy</th>
+                <th class="table-header table-data table-data-fit">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="table-data"></td>
+                <td class="table-data table-data-name">Justin Alvarez</td>
+                <td class="table-data"><div class="badge badge-gray">0150072</div></td>
+                <td class="table-data">
+                    <div class="badge badge-green"><div class="circle"></div>Presente</div>
+                </td>
+                <td class="table-data table-data-fit">
+                    <a href="#" class="link">
+                        Ver historial
+                        <i data-lucide="external-link"></i>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="table-bottom">
+        <p class="table-bottom-text">Mostrando 4 de 30 estudiantes matriculados.</p>
+        <div class="table-bottom-actions">
+            <i data-lucide="chevron-left"></i>
+            <i data-lucide="chevron-right"></i>
+        </div>
+    </div>
+</div>
+
+
 <div class="info-target info-target-sm">
     <div class="info-target-top">
         <p class="info-target-sm-title">Promedio de Asistencia</p>
@@ -36,90 +118,3 @@
         <p class="info-target-sm-text">Clases registradas</p>
     </div>
 </div>
-
-<div class="table">
-    <div class="table-top">
-        <h3 class="table-title">
-            <i data-lucide="graduation-cap"></i>
-            3ro de bachillerato especialidad informatica
-        </h3>
-    </div>
-    <table class="table-body">
-        <thead>
-            <tr>
-                <th class="table-header table-data table-data-first">Foto</th>
-                <th class="table-header table-data">Nombre</th>
-                <th class="table-header table-data">Matricula/ID</th>
-                <th class="table-header table-data">Asistencia hoy</th>
-                <th class="table-header table-data table-data-last">Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="table-data table-data-first"></td>
-                <td class="table-data table-data-name">Justin Alvarez</td>
-                <td class="table-data"><div class="badge badge-gray">0156464646</div></td>
-                <td class="table-data">
-                    <div class="badge badge-green"><div class="circle"></div>Presente</div>
-                </td>
-                <td class="table-data table-data-last">
-                    <div class="table-action">
-                        <a href="#" class="link">
-                            Ver historial
-                            <i data-lucide="external-link"></i>
-                        </a>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td class="table-data table-data-first"></td>
-                <td class="table-data table-data-name">Luis Matailo</td>
-                <td class="table-data"><div class="badge badge-gray">0150072668</div></td>
-                <td class="table-data">
-                    <div class="badge badge-yellow"><div class="circle"></div>Atraso</div>
-                </td>
-                <td class="table-data table-data-last">
-                    <div class="table-action">
-                        <a href="#" class="link">
-                            Ver historial
-                            <i data-lucide="external-link"></i>
-                        </a>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td class="table-data table-data-first"></td>
-                <td class="table-data table-data-name">Braulio Guambaña</td>
-                <td class="table-data"><div class="badge badge-gray">0113366645</div></td>
-                <td class="table-data">
-                    <div class="badge badge-red"><div class="circle"></div>Ausente</div>
-                </td>
-                <td class="table-data table-data-last">
-                    <div class="table-action">
-                        <a href="#" class="link">
-                            Ver historial
-                            <i data-lucide="external-link"></i>
-                        </a>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td class="table-data table-data-first"></td>
-                <td class="table-data table-data-name">Bryam Illescas</td>
-                <td class="table-data"><div class="badge badge-gray">0113366645</div></td>
-                <td class="table-data">
-                    <div class="badge badge-green"><div class="circle"></div>Presente</div>
-                </td>
-                <td class="table-data table-data-last">
-                    <div class="table-action">
-                        <a href="#" class="link">
-                            Ver historial
-                            <i data-lucide="external-link"></i>
-                        </a>
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-
