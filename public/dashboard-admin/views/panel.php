@@ -5,25 +5,25 @@ $itemsLinks = [
         'title' => 'Gestión de Estudiantes',
         'href'  => 'index.php?view=students-management',
         'icon'  => 'book-user',
-        'description' => 'Resumen de actividades y estadísticas importantes',
+        'description' => 'Administre el registro de nuevos estudiantes, edición de perfiles y asignación de tags NFC.',
     ],
     [
         'title' => 'Gestión de Usuarios',
         'href'  => 'index.php?view=users-management',
         'icon'  => 'square-user',
-        'description' => 'Resumen de actividades y estadísticas importantes',
+        'description' => 'Administre el registro de nuevos usuarios, edición de perfiles y asignación de tags NFC.',
     ],
         [
         'title' => 'Reportes',
         'href'  => 'index.php?view=reports',
         'icon'  => 'clipboard',
-        'description' => 'Resumen de actividades y estadísticas importantes',
+        'description' => 'Genere reportes PDF/Excel y visualice estadísticas de puntualidad y ausentismo.',
     ],
         [
         'title' => 'Configuración',
         'href'  => 'index.php?view=configuration',
         'icon'  => 'settings',
-        'description' => 'Resumen de actividades y estadísticas importantes',
+        'description' => 'Gestione los parámetros del sistema, usuarios autorizados y terminales NFC.',
     ],
 ]
 ?>
