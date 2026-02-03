@@ -6,7 +6,7 @@ $default = 'panel';
 
 $view = $_GET['view'] ?? $default;
 
-$viewsPermitidas = ['panel', 'courses', 'students', 'history', 'reports', 'observations', 'profile', 'configuration', 'help'];
+$viewsPermitidas = ['panel', 'courses', 'students', 'history', 'reports', 'observations', 'profile', 'configuration', 'help', 'students-management', 'users-management'];
 
 if (!in_array($view, $viewsPermitidas)) {
     $view = $default;
@@ -20,15 +20,27 @@ $menuItems = [
         'view'  => 'panel'
     ],
     [
-        'title' => 'Mis Cursos',
+        'title' => 'Cursos',
         'href'  => 'index.php?view=courses',
         'icon'  => 'book-open',
         'view'  => 'courses'
     ], 
     [
-        'title' => 'Mis Alumnos',
+        'title' => 'Gestión de Estudiantes',
+        'href'  => 'index.php?view=students-management',
+        'icon'  => 'book-user',
+        'view'  => 'students-management'
+    ],
+    [
+        'title' => 'Gestión de Usuarios',
+        'href'  => 'index.php?view=users-management',
+        'icon'  => 'square-user',
+        'view'  => 'users-management'
+    ],
+    [
+        'title' => 'Alumnos',
         'href'  => 'index.php?view=students',
-        'icon'  => 'user',
+        'icon'  => 'users',
         'view'  => 'students'
     ],
     [
@@ -38,7 +50,7 @@ $menuItems = [
         'view'  => 'history'
     ],
     [
-        'title' => 'Reportes de Curso',
+        'title' => 'Reportes',
         'href'  => 'index.php?view=reports',
         'icon'  => 'clipboard',
         'view'  => 'reports'
@@ -79,7 +91,9 @@ $viewTitles = [
     'observations'  => 'Observaciones',
     'profile'       => 'Mi Perfil',
     'configuration' => 'Configuración',
-    'help'          => 'Ayuda'
+    'help'          => 'Ayuda',
+    'students-management' => 'Gestión de Estudiantes',
+    'users-management'    => 'Gestión de Usuarios',
 ];
 
 $pageTitle = $viewTitles[$view] ?? 'Dashboard';
