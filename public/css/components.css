@@ -6,7 +6,41 @@
     </div>
 
 
+    <div class="input-item">
+            <label for="" class="input-label">
+                <i data-lucide="calendar"></i>
+                Fecha del suceso
+            </label>
+            <div class="input">
+                <input type="text">
+            </div>
+        </div>
+
 */ 
+
+.input-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.input-label {
+    font-size: 1rem;
+    font-weight: var(--semi-bold);
+    color: var(--black-secondary);
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+}
+
+.input-label svg {
+    width: 20px;
+    height: 20px;
+    stroke-width: 2;
+}
 
 input::placeholder {
     color: var(--black-secondary);
@@ -226,6 +260,8 @@ ESTRUCTURA HTML
     align-items: center;
     justify-content: center;
     gap: 10px;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
 
     padding: 5px 15px;
 
@@ -1281,6 +1317,34 @@ ro activo
 }
 
 
+/* OBSERVATION FORM */ 
 
 
+.observation-form {
+    padding: 24px 48px;
+    border-radius: var(--border-radius-primary);
+    background: var(--white-primary);
+
+    grid-column: 1/-1;
+    
+}
+
+.observation-form-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.observation-form-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.observation-form-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 

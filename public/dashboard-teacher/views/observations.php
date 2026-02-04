@@ -1,4 +1,54 @@
 
+<div class="observation-form">
+    <div class="observation-form-top">
+        <div class="input">
+            <input type="text">
+        </div>
+
+        <div class="badge badge-blue">
+            <i data-lucide="user"></i>
+            Estudiante seleccionado
+        </div>
+    </div>
+    <div class="observation-form-body">
+        <div class="input-item">
+            <label for="" class="input-label">
+                <i data-lucide="calendar"></i>
+                Fecha del suceso
+            </label>
+            <div class="input">
+                <input type="text">
+            </div>
+        </div>
+        <div class="input-item">
+            <label for="" class="input-label">
+                <i data-lucide="calendar"></i>
+                Fecha del suceso
+            </label>
+            <div class="input">
+                <input type="text">
+            </div>
+        </div>
+        <div class="input-item" style="grid-column: 1/-1;">
+            <label for="" class="input-label">
+                <i data-lucide="calendar"></i>
+                Fecha del suceso
+            </label>
+            <div class="input">
+                <input type="text">
+            </div>
+        </div>
+    </div>
+    <div class="observation-form-bottom">
+        <p>Los cambios se guardarán permanentemente en el historial del alumno</p>
+        <button class="button button-blue">
+            Registrar observacion
+        </button>
+    </div>
+</div>
+
+
+
 <div class="observation-history">
     <div class="observation-history-left">
         <i data-lucide="history"></i>
