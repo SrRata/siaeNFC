@@ -5,24 +5,30 @@
         <p>Lista de estudiantes matriculados</p>
     </div>
     <div class="filters-bottom">
-        <div class="filters-input">
-            <p>Curso</p>
+        <div class="input-item">
+            <label for="" class="input-label">
+                <i data-lucide="calendar"></i>
+                Fecha del suceso
+            </label>
             <div class="input">
-                <i data-lucide="graduation-cap"></i>
                 <input type="text">
             </div>
         </div>
-        <div class="filters-input">
-            <p>Estado</p>
+        <div class="input-item">
+            <label for="" class="input-label">
+                <i data-lucide="calendar"></i>
+                Fecha del suceso
+            </label>
             <div class="input">
-                <i data-lucide="circle-small"></i>
                 <input type="text">
             </div>
         </div>
-        <div class="filters-input">
-            <p>Estudiante</p>
+        <div class="input-item">
+            <label for="" class="input-label">
+                <i data-lucide="calendar"></i>
+                Fecha del suceso
+            </label>
             <div class="input">
-                <i data-lucide="user"></i>
                 <input type="text">
             </div>
         </div>

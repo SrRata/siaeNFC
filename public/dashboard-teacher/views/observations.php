@@ -10,6 +10,7 @@
             Estudiante seleccionado
         </div>
     </div>
+    <hr>
     <div class="observation-form-body">
         <div class="input-item">
             <label for="" class="input-label">
